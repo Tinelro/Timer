@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Timers">
+  <grid id="27dc6" binding="mainPanel" layout-manager="GridLayoutManager" row-count="9" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="6" y="3" width="649" height="400"/>
+    </constraints>
+    <properties>
+      <background color="-1841956"/>
+      <maximumSize width="600" height="400"/>
+      <minimumSize width="600" height="400"/>
+      <name value=""/>
+      <preferredSize width="600" height="400"/>
+    </properties>
+    <border type="line" title="Timers">
+      <font name="Courier New" size="28" style="1"/>
+      <title-color color="-4495070"/>
+      <color color="-15853893"/>
+    </border>
+    <children>
+      <component id="3be7a" class="javax.swing.JRadioButton" binding="countDown">
+        <constraints>
+          <grid row="4" column="0" row-span="2" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="128" height="20"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-4599566"/>
+          <borderPainted value="true"/>
+          <foreground color="-16308918"/>
+          <selected value="true"/>
+          <text value="Count down:"/>
+        </properties>
+      </component>
+      <component id="51365" class="javax.swing.JRadioButton" binding="onTime">
+        <constraints>
+          <grid row="1" column="0" row-span="2" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <autoscrolls value="false"/>
+          <background color="-4599566"/>
+          <borderPainted value="true"/>
+          <foreground color="-16308918"/>
+          <text value="On time:"/>
+        </properties>
+      </component>
+      <vspacer id="246a3">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="1" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="11" height="23"/>
+            <maximum-size width="-1" height="25"/>
+          </grid>
+        </constraints>
+      </vspacer>
+      <vspacer id="69e7">
+        <constraints>
+          <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+            <preferred-size width="-1" height="25"/>
+            <maximum-size width="-1" height="25"/>
+          </grid>
+        </constraints>
+      </vspacer>
+      <component id="5638c" class="javax.swing.JButton" binding="startCD">
+        <constraints>
+          <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Start count down"/>
+        </properties>
+      </component>
+      <component id="3d102" class="javax.swing.JButton" binding="stopButton" default-binding="true">
+        <constraints>
+          <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <hideActionText value="false"/>
+          <text value="Stop"/>
+        </properties>
+      </component>
+      <component id="9fe46" class="javax.swing.JButton" binding="chooseCOLORButton" default-binding="true">
+        <constraints>
+          <grid row="8" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Choose COLOR"/>
+        </properties>
+      </component>
+      <component id="ba8c4" class="javax.swing.JSpinner" binding="speedChoice" custom-create="true">
+        <constraints>
+          <grid row="8" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="80" height="-1"/>
+            <maximum-size width="80" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editor value=""/>
+          <enabled value="true"/>
+          <name value="Blinking SPEED"/>
+          <toolTipText value="Blinking SPEED"/>
+        </properties>
+      </component>
+      <component id="a9473" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="7" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="2" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <alignmentY value="0.0"/>
+          <font name="JetBrains Mono ExtraLight"/>
+          <foreground color="-7860971"/>
+          <horizontalAlignment value="0"/>
+          <horizontalTextPosition value="0"/>
+          <labelFor value="ba8c4"/>
+          <text value="Speed(ms)"/>
+          <verticalAlignment value="3"/>
+          <verticalTextPosition value="3"/>
+        </properties>
+      </component>
+      <component id="7ec58" class="javax.swing.JFormattedTextField" binding="localTimeNow" custom-create="true">
+        <constraints>
+          <grid row="1" column="3" row-span="2" col-span="2" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+          <font name="Courier New" size="18" style="1"/>
+          <horizontalAlignment value="0"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="e2697" class="javax.swing.JSpinner" binding="remainingTime" custom-create="true">
+        <constraints>
+          <grid row="4" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font name="Roboto Thin" size="18" style="1"/>
+          <toolTipText value="HH:mm:ss"/>
+        </properties>
+      </component>
+      <component id="72e36" class="javax.swing.JFormattedTextField" binding="newLocalTime" custom-create="true">
+        <constraints>
+          <grid row="1" column="1" row-span="2" col-span="2" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="true"/>
+          <enabled value="false"/>
+          <font name="Courier New" size="18" style="1"/>
+          <horizontalAlignment value="0"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="988c7" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="2" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <disabledIcon value="java/time/Clock.class"/>
+          <font name="Monospaced" size="16" style="3"/>
+          <foreground color="-7860971"/>
+          <horizontalAlignment value="0"/>
+          <horizontalTextPosition value="0"/>
+          <labelFor value="7ec58"/>
+          <text value="Current TIME"/>
+        </properties>
+      </component>
+      <component id="d10f9" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="2" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Monospaced" size="16" style="3"/>
+          <foreground color="-16308918"/>
+          <horizontalAlignment value="0"/>
+          <horizontalTextPosition value="0"/>
+          <labelFor value="72e36"/>
+          <text value="&amp;Target time"/>
+        </properties>
+      </component>
+      <component id="1110" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="2" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Monospaced" size="16" style="3"/>
+          <foreground color="-13409487"/>
+          <text value="Countdown"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+  <buttonGroups>
+    <group name="buttonGroup1">
+      <member id="3be7a"/>
+      <member id="51365"/>
+    </group>
+  </buttonGroups>
+  <inspectionSuppressions>
+    <suppress inspection="NoLabelFor"/>
+  </inspectionSuppressions>
+</form>
